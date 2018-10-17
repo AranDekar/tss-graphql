@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "*"
+      ],
+      "core/*": [
+        "./src/core/*"
+      ],
+      "strategy/*": [
+        "./src/strategy/*"
+      ],
+      "user/*": [
+        "./src/user/*"
+      ]
+    }
+  }
+}

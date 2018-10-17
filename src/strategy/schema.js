@@ -1,4 +1,4 @@
-import Base from 'core/graphql/base';
+import Base from "core/graphql/base";
 
 const Strategy = `
 extend type Query{
@@ -11,7 +11,7 @@ extend type Query{
 extend type Mutation{
   backtest(strategyId:ID!): [YearlyReport]
   addStrategy(params: StrategyInput): [Strategy]
-  deleteStrategy(strategyId:ID!): Strategy
+  deleteStrategy(strategyId:ID!): ID
 }
 
 type Strategy {

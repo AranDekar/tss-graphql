@@ -116,7 +116,8 @@ class StrategyService {
   }
 
   static async deleteStrategy(strategyId) {
-    return deleteStrategy(strategyId);
+    await deleteStrategy(strategyId);
+    return strategyId;
   }
 
   static async getEvents() {
